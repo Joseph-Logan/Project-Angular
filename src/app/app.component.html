@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-white">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="navbar-item">
+              <a class="nav-link" routerLink="/home">Usuarios</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" routerLink="/form">Fórmulario</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opciones...</a>
+            <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+              <a class="dropdown-item" href="#">Create</a>
+              <a class="dropdown-item" href="#">Details</a>
+            </div>
+          </li>
+      </ul>
+      <form class="form-inline">
+        <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+    </form>
+  </div> 
+</nav>
+<br>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<br />
+<div class="card-footer text-center">
+    <h6>Proyecto Elaborado con <a href="#">Angular</a> y Back-end ApiRest <a href="#">Laravel 5.5</a></h6>
+</div>
+
